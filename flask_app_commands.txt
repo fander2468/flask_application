@@ -1,0 +1,14 @@
+pip install flask-wtf
+
+pip install flask-login flask-sqlalchemy flask-migrate
+pip install psycopg2-binary
+brew install postgresql
+
+export FLASK_ENV=production
+export FLASK_ENV=development
+
+flask db init
+flask db migrate
+flask db upgrade
+
+flask run
